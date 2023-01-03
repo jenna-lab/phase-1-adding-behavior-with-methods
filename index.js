@@ -21,22 +21,16 @@ class Dog {
 }
 
 class Bird {
-  //...
   constructor(name, sex) {
     this.name = name;
     this.sex = sex;
-    this.speak = function () {
-      return `It'\s me! ${this.name},the parrot!`;
-    };
+  }
+
+  speak() {
+    if (this.sex === 'male') {
+      return `It's me! ${this.name}, the parrot!`;
+    } else {
+      return `${this.name} says squawk!`;
+    }
   }
 }
-// class Bird2 {
-//   //...
-//   constructor(name, sex) {
-//     this.name = name;
-//     this.sex = sex;
-//     this.speak = function () {
-//       return `${this.name} says squawk!`;
-//     };
-//   }
-// }
